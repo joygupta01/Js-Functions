@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction(2)">Execute</button>
+    <button onclick="variables()">Variable</button>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script>
+        function myfunction(x,y){
+            if (y === undefined){
+                y=6
+            }
+            document.write(x*y)
+        }
+
+            function variables () {
+                var a = 3
+                var b = 7
+                document.getElementById("a").innerHTML= a+b;
+            }
+            document.getElementById("b").innerHTML= b;
+            document.getElementById("c").innerHTML= a;
+        
+    </script>
+</body>
+</html>
